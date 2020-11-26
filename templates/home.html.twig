@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Bienvenue au garage pnephys{% endblock %}
+
+{% block body %}
+<div class="container">
+    <div class="jumbotron">
+        <h1 class="display-3">Bienvenue au garage Pnephys</h1>
+        <p class="lead">Vous trouverez votre choix, dans une large gamme de voiture, personnalisable.  Ainsi que des voitures d'occasions.</p>
+        <hr class="my-4">
+        <p>OFFRE DE REPRISE GRATUITE ET RAPIDE, EN 3 ÉTAPES SEULEMENT</p>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="{{ path('ads_index') }}" role="button">Trouver votre modèle</a>
+        </p>
+    </div>
+    <div class="row">
+        <div class="col">
+        <img  src="/image/pexels-sourav-mishra-2710043.jpg" alt="Photo de Sourav Mishra provenant de Pexels" width="100%" height="">
+
+        </div>
+
+    </div>
+
+
+</div>
+
+{% endblock %}
