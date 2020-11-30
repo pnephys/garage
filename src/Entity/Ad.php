@@ -12,9 +12,9 @@ use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 
 /**
  * @ORM\Entity(repositoryClass=AdRepository::class)
- * ORM\HasLifecycleCallbacks
- * UniqueEntity(
- *  fields={"title"},
+ * @ORM\HasLifecycleCallbacks
+ * @UniqueEntity(
+ *  fields={"modele"},
  *  message="Une autre annonce possède déjà ce titre, merci de le modifier"
  * )
  */
@@ -119,7 +119,7 @@ class Ad
     public function initializeSlug(){
         if(empty($this->slug)){
             $slugify = new Slugify();
-            $this->slug = $slugify->slugify($this->title);
+            $this->slug = $slugify->slugify($this->modele);
         }
     }
     

@@ -18,14 +18,14 @@ class AppFixtures extends Fixture
         // $product = new Product();
         // $manager->persist($product);
         $faker = Factory::create('FR-fr');
-        $slugify = new Slugify();
+        //$slugify = new Slugify();
  // gestion des annonces
         for($a = 1; $a <= 15; $a++){
             $ad = new Ad();
             $title = $faker->word();
             $modele =$faker->word(2);
             
-            $slug = $slugify->slugify($title);
+            //$slug = $slugify->slugify($title);
             //$coverImage = $faker->imageUrl(1000,350);
             $description = $faker->paragraph(2);
             $carburant =$faker->word();
@@ -34,7 +34,7 @@ class AppFixtures extends Fixture
             
 
             $ad->setMarque($title)
-                ->setSlug($slug)
+                //->setSlug($slug)
                 ->setModele($modele)
                 ->setCoverImage('https://picsum.photos/1000/350')
                 ->setKm(rand(0,100000))
