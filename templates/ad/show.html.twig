@@ -7,22 +7,38 @@
    
 </div>
 <div>
- <div class="container">
-       <h1> Marque de la voiture : {{ad.marque}}</h1>
-       <p> Modèle de la voiture : {{ad.modele}}</p>
-       <p> Kilomètre de la voiture : {{ ad.km }} Km</p>
-       <p> Prix catalogue : {{ ad.price }} €</p>
-       <p> Nombre de propriétaire : {{ ad.NbProprio }}</p>
-       <p> Cylindrée : {{ ad.cylindre}}</p>
-       <p> Puissance : {{ ad.puissance }}</p>
-       <p> Type de carburant : {{ ad.carburant }}</p>
-       <p> Année de mise en circulation : {{ ad.Pcirculation }}</p>
-       <p> Transmission : {{ ad.transmission }}</p>
-       <p> Description : {{ ad.description }}</p>
-       <p> Les options de la voiture : {{ ad.options | raw | nl2br }}</p>
-    </div>
+<div class="container">
 
+    <div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Marque de la voiture : {{ad.marque}}</h5>
+            <h5 class="card-title">Modèle de la voiture : {{ad.modele}} </h5>
+            <h5 class="card-title">Kilomètre de la voiture : {{ ad.km }} Km</h5>
+            <h5 class="card-title">Prix catalogue : {{ ad.price }} €</h5>
+            <h5 class="card-title">Nombre de propriétaire : {{ ad.NbProprio }}</h5>
+            <h5 class="card-title">Cylindrée : {{ ad.cylindre}}</h5>
+            <h5 class="card-title">Puissance : {{ ad.puissance }}</h5>
+            <h5 class="card-title">Type de carburant : {{ ad.carburant }}</h5>
+            <h5 class="card-title">Année de mise en circulation : {{ ad.Pcirculation }}</h5>
+            <h5 class="card-title">Transmission : {{ ad.transmission }}</h5>
+            <h5 class="card-title">Description : {{ ad.description }}</h5>
+        </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Les options de la voiture : {{ ad.options | raw | nl2br }}</h5>
+        </div>
+    </div>
+  </div>
 </div>
+</div>
+
+ 
+
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8 mb-3 ">
